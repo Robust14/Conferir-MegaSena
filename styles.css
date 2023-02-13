@@ -58,14 +58,16 @@ input{
     position: absolute;
     top: 24.2rem;
     height: 60vh;
+    margin: 0.3rem;
     border-radius: 0.8rem;
     overflow: scroll;
     overflow: auto;
-    background: #ffffff;
+    background: #d81414;
 }
 .hg{
     position: relative;
     top: 0rem;
+    margin: 0.5rem;
     background: #bbb;
     width: 72%;
     border-radius: 0.8rem;
