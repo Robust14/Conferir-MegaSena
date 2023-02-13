@@ -2,7 +2,7 @@
 
 html{
     padding: 0;
-    left: 0;
+    margin: 0;
     font-size: 62.5%;
 }
 h1{
@@ -38,7 +38,6 @@ input{
 .hg-input{
     background: #188038;
     padding: 0.5rem;
-    margin: 0.2rem;
     width: 41rem;
 }
 .btn-conferir{
@@ -165,9 +164,8 @@ noscript{
         width: 100%;
     }
     .hg-input{
-        width: 95%;
+        width: 98%;
         padding: 0.5rem;
-        margin: 0.2rem;
         background: #188038;
     }
     .btn-conferir{
@@ -178,12 +176,12 @@ noscript{
         position: absolute;
         top: 22.5rem;
         height: 60vh;
-        width: 96%;
+        width: 97%;
     }
     .hg{
         position: relative;
         top: 0rem;
-        width: 96%;
+        width: 97.5%;
         padding: 0.6rem;
     }
     .header-res{
