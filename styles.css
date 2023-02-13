@@ -57,6 +57,7 @@ input{
     position: absolute;
     top: 24.68rem;
     height: 60vh;
+    margin-left: -0.2rem;
     border-radius: 0.8rem;
     overflow: scroll;
     overflow: auto;
@@ -176,16 +177,16 @@ noscript{
         position: absolute;
         top: 22.5rem;
         height: 60vh;
-        width: 97%;
+        width: 96.5%;
     }
     .hg{
         position: relative;
         top: 0rem;
-        width: 97.5%;
+        width: 98%;
         padding: 0.6rem;
     }
     .header-res{
-        width: 97%;
+        width: 97.5%;
         background: #999;
     }
     .divAcertos{
