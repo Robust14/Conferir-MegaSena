@@ -39,6 +39,7 @@ input{
     background: #188038;
     padding: 0.5rem;
     width: 41rem;
+    margin-bottom: 0.1rem;
 }
 .btn-conferir{
     position: relative;
