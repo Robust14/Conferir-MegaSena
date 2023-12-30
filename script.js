@@ -1,6 +1,7 @@
 "use strict";
 
-let hpg = document.getElementsByClassName('hg')[0];
+let hpg = document.querySelector('.hg');
+let containerRes = document.querySelector('.container-res');
 let numSorteados;
 let numJogados;
 let jogadas = 0;
@@ -43,30 +44,31 @@ function mostrar(){
     }
     jogadas++;
 
-    let hr = document.createElement("hr");
-    hpg.appendChild(hr);
+    let resultado = document.createElement("div");
+    resultado.setAttribute("class","resultado");
+    containerRes.appendChild(resultado);
 
     let br = document.createElement("br")
     let divJogadas = document.createElement("div")
     divJogadas.setAttribute("class","jogadas");
     divJogadas.innerHTML = jogadas;
     divJogadas.style.marginRight = "25px";
-    hpg.appendChild(divJogadas);
-    hpg.appendChild(br)
+    resultado.appendChild(divJogadas);
+    resultado.appendChild(br)
 
     br = document.createElement("br")
     let mostrarSorteados = document.createElement("div")
     mostrarSorteados.setAttribute("class","mostrarSort");
     mostrarSorteados.innerHTML = "Números Sorteados: " + numSorteados;
-    hpg.appendChild(mostrarSorteados);
-    hpg.appendChild(br)
+    resultado.appendChild(mostrarSorteados);
+    resultado.appendChild(br)
 
     let mostrarJogados = document.createElement("div")
     mostrarJogados.setAttribute("class","mostrarJog");
     mostrarJogados.innerHTML = "Números Jogados: &nbsp;&nbsp;&nbsp;" + numJogados;
-    hpg.appendChild(mostrarJogados);
-    hpg.appendChild(br)
-    hpg.appendChild(divJogadas);
+    resultado.appendChild(mostrarJogados);
+    resultado.appendChild(br)
+    resultado.appendChild(divJogadas);
 
     acertos.map((el)=>{
             
@@ -74,15 +76,15 @@ function mostrar(){
         bolasAcertos.setAttribute("class","divA");
         bolasAcertos.setAttribute("id","divA");
         bolasAcertos.innerHTML = el;
-        hpg.appendChild(bolasAcertos);
+        resultado.appendChild(bolasAcertos);
     })
     
     let linhaRes = document.createElement("div");
     linhaRes.setAttribute("class","divAcertos");
     linhaRes.style.display = "inline-block";
     linhaRes.innerHTML = acertos.length + " acerto(s).";
-    hpg.appendChild(linhaRes);
-    hpg.appendChild(br);
+    resultado.appendChild(linhaRes);
+    resultado.appendChild(br);
 }
 
 function clique(){
